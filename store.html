@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScrollBooks Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#fdfaf6] text-gray-800 font-serif">
+    <!-- Header -->
+    <header class="flex items-center justify-between px-8 py-6 border-b border-gray-300">
+      <h1 class="text-3xl font-bold">SCROLL<br>BOOKS</h1>
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-black">All Books</a>
+        <a href="#" class="text-gray-700 hover:text-black">New Releases</a>
+        <a href="#" class="text-gray-700 hover:text-black">Best Sellers</a>
+        <input type="text" placeholder="Search" class="ml-4 px-3 py-1 border rounded"/>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-12 px-4">
+      <div class="flex justify-center space-x-8 mb-6">
+        <img src="https://images.unsplash.com/photo-1604014238254-518da0200b17?auto=format&fit=crop&w=300&q=80" alt="Ocean Beyond" class="h-60 shadow-md"/>
+        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=300&q=80" alt="Nature's Wonders" class="h-60 shadow-md"/>
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=300&q=80" alt="Last Voyage" class="h-60 shadow-md"/>
+      </div>
+      <p class="text-xl font-medium text-gray-700">Scroll Books is dedicated to publishing timeless stories and visually captivating works.</p>
+    </section>
+
+    <!-- Book Results Section -->
+    <section class="px-8 py-12">
+      <h2 class="text-2xl font-bold mb-6">Results</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div>
+          <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=300&q=80" alt="Silent Forest" class="h-64 w-full object-cover shadow" />
+          <h3 class="mt-2 font-semibold text-lg">The Silent Forest</h3>
+          <p class="text-sm text-gray-500">by Emma Collins</p>
+          <p class="text-sm text-gray-700 mt-1">$11.99</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=300&q=80" alt="Journey Through Time" class="h-64 w-full object-cover shadow" />
+          <h3 class="mt-2 font-semibold text-lg">Journey Through Time</h3>
+          <p class="text-sm text-gray-500">by Scroll Books</p>
+          <p class="text-sm text-gray-700 mt-1">$4.99</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1612831814713-93f1072f35c4?auto=format&fit=crop&w=300&q=80" alt="Tales of the Imagination" class="h-64 w-full object-cover shadow" />
+          <h3 class="mt-2 font-semibold text-lg">Tales of the Imagination</h3>
+          <p class="text-sm text-gray-500">by William Harris</p>
+          <p class="text-sm text-gray-700 mt-1">$9.99</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1514454529242-9e4677563e5c?auto=format&fit=crop&w=300&q=80" alt="Art of Serenity" class="h-64 w-full object-cover shadow" />
+          <h3 class="mt-2 font-semibold text-lg">Art of Serenity</h3>
+          <p class="text-sm text-gray-500">by Sophia Lee</p>
+          <p class="text-sm text-gray-700 mt-1">$7.99</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
