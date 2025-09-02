@@ -2,52 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScrollBooks | Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScrollBooks Marketplace</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900 font-serif">
-  <!-- Header -->
-  <header class="flex justify-between items-center px-8 py-6 border-b border-gray-200">
-    <h1 class="text-4xl font-bold leading-tight">SCROLL<br>BOOKS</h1>
-    <nav class="space-x-6 text-lg">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="store.html" class="hover:underline">Store</a>
+<body class="bg-[#fdfaf6] text-gray-900 font-sans">
+
+  <!-- Top Nav -->
+  <header class="flex justify-between items-center px-8 py-4 border-b bg-white shadow-sm">
+    <div class="text-3xl font-bold leading-tight tracking-tight">SCROLL<br>BOOKS</div>
+    <nav class="space-x-6 text-sm font-medium">
+      <a href="#" class="hover:underline">All Books</a>
+      <a href="#" class="hover:underline">New Releases</a>
+      <a href="#" class="hover:underline">Best Sellers</a>
+      <input type="text" placeholder="Search" class="ml-6 px-3 py-1 border border-gray-300 rounded text-sm" />
     </nav>
   </header>
 
-  <!-- Main Section -->
-  <main class="max-w-[1200px] mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-8">All Books</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-14">
-      
-      <!-- Book Card -->
-      <div>
-        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80" class="w-full h-[280px] object-cover border border-gray-200 shadow-sm"/>
-        <div class="mt-2 text-sm leading-tight">
-          <p class="font-semibold">The Silent Forest</p>
-          <p class="text-gray-600">by Emma Collins</p>
-          <p class="text-gray-800">$11.99</p>
-        </div>
+  <!-- Hero Banner -->
+  <section class="px-8 py-10 bg-[#f7f4ee]">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=400&q=80" class="w-full h-[250px] object-cover"/>
+        <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=400&q=80" class="w-full h-[250px] object-cover"/>
+        <img src="https://images.unsplash.com/photo-1590608897129-79da97c3b6ce?auto=format&fit=crop&w=400&q=80" class="w-full h-[250px] object-cover"/>
       </div>
+      <p class="text-lg font-medium text-gray-700">Scroll Books is dedicated to publishing timeless stories and visually captivating works.</p>
+    </div>
+  </section>
 
-      <div>
-        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" class="w-full h-[280px] object-cover border border-gray-200 shadow-sm"/>
-        <div class="mt-2 text-sm leading-tight">
-          <p class="font-semibold">Journey Through Time</p>
-          <p class="text-gray-600">by Scroll Books</p>
-          <p class="text-gray-800">$4.99</p>
-        </div>
+  <!-- Results Section -->
+  <main class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Sidebar -->
+    <aside class="md:col-span-1">
+      <h2 class="text-lg font-semibold mb-2">Results</h2>
+      <div class="text-sm space-y-2">
+        <div><strong>Brand</strong><br/><input type="checkbox" checked> Scroll Books</div>
+        <div><a href="#" class="text-blue-600 hover:underline">Sort</a></div>
+        <div>Prime</div>
+        <div><a href="#" class="text-blue-600 hover:underline">Follow</a></div>
       </div>
+    </aside>
 
+    <!-- Book Grid -->
+    <section class="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-6 text-sm">
       <div>
-        <img src="https://images.unsplash.com/photo-1516972810927-80185027ca84?auto=format&fit=crop&w=400&q=80" class="w-full h-[280px] object-cover border border-gray-200 shadow-sm"/>
-        <div class="mt-2 text-sm leading-tight">
-          <p class="font-semibold">Tales of the Imagination</p>
-          <p class="text-gray-600">by William Harris</p>
-          <p class="text-gray-800">$9.99</p>
-        </div>
+        <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=400&q=80" class="w-full h-[220px] object-cover shadow mb-2"/>
+        <p class="font-semibold">The Silent Forest</p>
+        <p class="text-gray-600">by Emma Collins</p>
+        <p class="text-gray-800">$11.99 <span class="text-blue-600 text-xs">✔ prime</span></p>
       </div>
-
       <div>
-        <img src="https://images.unsplash.com/photo-1531219432768-9f540ce91ef5?auto=format&fit=crop&w=400&q=80" class="w-full h-[280px] object-cover border border-gr
+        <img src="https://images.unsplash.com/photo-1573497019412-b7c61f00f195?auto=format&fit=crop&w=400&q=80" class="w-full h-[220px] object-cover shadow mb-2"/>
+        <p class="font-semibold">Journey Through Time</p>
+        <p class="text-gray-600">by Scroll Books</p>
+        <p class="text-gray-800">$4.99</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=400&q=80" class="w-full h-[220px] object-cover shadow mb-2"/>
+        <p class="font-semibold">Tales of the Imagination</p>
+        <p class="text-gray-600">by William Harris</p>
+        <p class="text-gray-800">$9.99</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1473187983305-f615310e7daa?auto=format&fit=crop&w=400&q=80" class="w-full h-[220px] object-cover shadow mb-2"/>
+        <p class="font-semibold">Art of Serenity</p>
+        <p class="text-gray-600">by Sophia Lee</p>
+        <p class="text-gray-800">$7.99</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=400&q=80" class="w-full h-[220px] object-cover shadow mb-2"/>
+        <p class="font-semibold">Tales of the Imagination</p>
+        <p class="text-gray-600">by William Harris</p>
+        <p class="text-gray-800">$8.49</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=400&q=80" class="w-full h-[220px] object-cover shadow mb-2"/>
+        <p class="font-semibold">Art of Serenity</p>
+        <p class="text-gray-600">by Scroll Books</p>
+        <p class="text-gray-800">$6.99</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
